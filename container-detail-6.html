@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>ContekHome &mdash; Your container house!</title>
+  </head>
+  <body>
+    <nav class="site-nav">
+      <div class="container">
+        <div class="menu-bg-wrap">
+          <div class="site-navigation">
+            <a href="index.html" class="logo m-0 float-start">ContekHome</a>
+            <ul
+              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="services.html">Containers</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+            <a
+              href="#"
+              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+            >
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="hero page-inner overlay"
+      style="background-image: url('images/container_bg.jpg')"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">
+                Two-Story Container Residence</h1>
+            <nav
+              aria-label="breadcrumb"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ol class="breadcrumb text-center justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item">
+                  <a href="services.html">Containers</a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6">
+            <div class="img-property-slide-wrap">
+              <div class="img-property-slide">
+                <img
+                  src="images/img/6.jpeg"
+                  alt="Container Interior"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+                <h2 class="heading text-primary text-center">
+                    Two-Story Container Residence
+                </h2>
+                <p class="text-black fs-6">
+                    A spacious two-level container home offering expanded living space in a compact footprint. Features modern design with large windows and contemporary exterior finishes.
+                </p>
+                <p class="text-black fs-6">
+                    Two-story design maximizes space efficiency, includes interior stairs, and offers separate living zones. Ideal for small families or those needing extra space.
+                </p>
+                <ul class="list-unstyled text-black fs-6">
+                    <li><strong>Size:</strong> Modified 20ft container - two levels</li>
+                    <li><strong>Price:</strong> <span class="price-highlight">$4,200</span></li>
+                    <li><strong>Status:</strong> Custom build - 6-8 weeks</li>
+                </ul>
+        </div>
+        </div>
+            <div class="d-block agent-box p-2 mt-3 bg-light rounded">
+                <h4 class="mb-3 text-primary text-center">Request Information & Pricing</h4>
+              <div class="contact-form">
+                <div id="contactForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName" class="form-label">First Name <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="firstName" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label">Last Name <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Delivery Address <span class="required">*</span></label>
+                        <textarea class="form-control" id="address" rows="2" placeholder="Street address, city, postal code, country" required></textarea>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="containerModel" class="form-label">Container Model of Interest</label>
+                            <select class="form-control" id="containerModel">
+                                <option value="">Select a model</option>
+                                <option value="20ft-eco-friendly">20ft Eco-Friendly Container Home - $12,500</option>
+                                <option value="modern-single-level">Modern Single-Level Container - $12,500</option>
+                                <option value="compact-studio">Compact Studio Container - $3,800</option>
+                                <option value="multi-level-complex">Multi-Level Container Complex - $12,500</option>
+                                <option value="other">Other (specify in message)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="budget" class="form-label">Budget Range</label>
+                            <select class="form-control" id="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-5000">Under $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000-20000">$10,000 - $20,000</option>
+                                <option value="20000-50000">$20,000 - $50,000</option>
+                                <option value="over-50000">Over $50,000</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="timeline" class="form-label">Preferred Delivery Timeline</label>
+                        <select class="form-control" id="timeline">
+                            <option value="">Select timeline</option>
+                            <option value="immediate">As soon as possible</option>
+                            <option value="1-3-months">1-3 months</option>
+                            <option value="3-6-months">3-6 months</option>
+                            <option value="6-12-months">6-12 months</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Additional Information</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your specific needs, questions about financing, delivery requirements, or any other details..."></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="newsletter">
+                            <label class="form-check-label" for="newsletter">
+                                I would like to receive updates about new container models and special offers
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="privacy" required>
+                            <label class="form-check-label" for="privacy">
+                                I agree to the privacy policy and terms of service <span class="required">*</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="align-content-end">
+                      <button type="button" class="btn btn-primary btn-lg" onclick="submitForm()">
+                          Send Inquiry & Request Quote
+                      </button><br><br>
+                    </div>
+                    <div id="successMessage" class="success-message">
+                        <strong>Thank you!</strong> Your inquiry has been sent successfully. Anna will contact you within 24 hours with detailed information about pricing, delivery options, and payment methods.
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-footer">
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              . All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+      function submitForm() {
+            // Récupération des données du formulaire
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+            const containerModel = document.getElementById('containerModel').value;
+            const budget = document.getElementById('budget').value;
+            const timeline = document.getElementById('timeline').value;
+            const message = document.getElementById('message').value;
+            const newsletter = document.getElementById('newsletter').checked;
+            const privacy = document.getElementById('privacy').checked;
+
+            // Validation des champs requis
+            if (!firstName || !lastName || !email || !address || !privacy) {
+                alert('Please fill in all required fields and accept the privacy policy.');
+                return;
+            }
+
+            // Validation de l'email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            // Construction du corps de l'email
+            const emailBody = `
+            New Container Home Inquiry from ContekHome Website
+
+            Customer Information:
+            - Name: ${firstName} ${lastName}
+            - Email: ${email}
+            - Phone: ${phone || 'Not provided'}
+            - Delivery Address: ${address}
+
+            Container Details:
+            - Model of Interest: ${containerModel || 'Not specified'}
+            - Budget Range: ${budget || 'Not specified'}
+            - Preferred Timeline: ${timeline || 'Not specified'}
+
+            Additional Information:
+            ${message || 'None provided'}
+
+            Marketing Preferences:
+            - Newsletter subscription: ${newsletter ? 'Yes' : 'No'}
+
+            ---
+            This inquiry was submitted on ${new Date().toLocaleString()}
+                        `.trim();
+
+            // Création du lien mailto
+            const subject = encodeURIComponent(`Container Home Inquiry - ${firstName} ${lastName}`);
+            const body = encodeURIComponent(emailBody);
+            const mailtoLink = `mailto:eprowashsolution@gmail.com?subject=${subject}&body=${body}`;
+
+            // Ouverture du client email
+            window.location.href = mailtoLink;
+
+            // Affichage du message de succès
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // Scroll vers le message de succès
+            document.getElementById('successMessage').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+
+            // Optionnel: Réinitialiser le formulaire après 3 secondes
+            setTimeout(() => {
+                document.getElementById('contactForm').reset();
+            }, 3000);
+        }
+
+        // Validation en temps réel de l'email
+        document.getElementById('email').addEventListener('blur', function() {
+            const email = this.value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (email && !emailRegex.test(email)) {
+                this.style.borderColor = '#dc3545';
+                this.classList.add('is-invalid');
+            } else {
+                this.style.borderColor = '#ced4da';
+                this.classList.remove('is-invalid');
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </script>
+  </body>
+</html>
