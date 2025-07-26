@@ -45,8 +45,9 @@
               class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
             >
               <li><a href="index.html">Home</a></li>
-              <li><a href="services.html">Services</a></li>
+              <li><a href="services.html">Products</a></li>
               <li class="active"><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
 
             <a
@@ -284,18 +285,119 @@
               <span class="caption text-black-50"># of Agents</span>
             </div>
           </div>
+
+           <div class="d-block agent-box p-2 mt-3 bg-light rounded">
+                <h4 class="mb-3 text-primary text-center">Request Information & Pricing</h4>
+              <div class="contact-form">
+                <div id="contactForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName" class="form-label">First Name <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="firstName" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label">Last Name <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Delivery Address <span class="required">*</span></label>
+                        <textarea class="form-control" id="address" rows="2" placeholder="Street address, city, postal code, country" required></textarea>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="containerModel" class="form-label">Container Model of Interest</label>
+                            <select class="form-control" id="containerModel">
+                                <option value="">Select a model</option>
+                                <option value="20ft-eco-friendly">20ft Eco-Friendly Container Home - $12,500</option>
+                                <option value="modern-single-level">Modern Single-Level Container - $12,500</option>
+                                <option value="compact-studio">Compact Studio Container - $3,800</option>
+                                <option value="multi-level-complex">Multi-Level Container Complex - $12,500</option>
+                                <option value="other">Other (specify in message)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="budget" class="form-label">Budget Range</label>
+                            <select class="form-control" id="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-5000">Under $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000-20000">$10,000 - $20,000</option>
+                                <option value="20000-50000">$20,000 - $50,000</option>
+                                <option value="over-50000">Over $50,000</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="timeline" class="form-label">Preferred Delivery Timeline</label>
+                        <select class="form-control" id="timeline">
+                            <option value="">Select timeline</option>
+                            <option value="immediate">As soon as possible</option>
+                            <option value="1-3-months">1-3 months</option>
+                            <option value="3-6-months">3-6 months</option>
+                            <option value="6-12-months">6-12 months</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Additional Information</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your specific needs, questions about financing, delivery requirements, or any other details..."></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="newsletter">
+                            <label class="form-check-label" for="newsletter">
+                                I would like to receive updates about new container models and special offers
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="privacy" required>
+                            <label class="form-check-label" for="privacy">
+                                I agree to the privacy policy and terms of service <span class="required">*</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="align-content-end">
+                      <button type="button" class="btn btn-primary btn-lg" onclick="submitForm()">
+                          Send Inquiry & Request Quote
+                      </button><br><br>
+                    </div>
+                    <div id="successMessage" class="success-message">
+                        <strong>Thank you!</strong> Your inquiry has been sent successfully. Anna will contact you within 24 hours with detailed information about pricing, delivery options, and payment methods.
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
       </div>
     </div>
 
+    
     <div class="site-footer">
         <div class="row mt-5">
           <div class="col-12 text-center">
             <p>
               Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
+                <strong> 2018 </strong>
               . All Rights Reserved.
             </p>
           </div>
